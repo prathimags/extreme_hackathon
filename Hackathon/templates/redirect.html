@@ -1,0 +1,14 @@
+{% extends 'head.html' %}
+{% set active_page = "results" %}
+{% block content %}
+
+   <form class="form-horizontal" action="{{ url_for('regform')}}" method="post"> 
+	<div class="form-group intro-center text-center bg-faded p-5 rounded">		
+      <h1 class="h3 mb-3 font-weight-normal text-danger">This page is still under development .....</h1>
+      <br>
+      <img src="static/img/workinprogress.png" class="rotate" width="300" height="300" />     
+      <br><br>
+    </div>  
+   </form>
+
+{% endblock %}

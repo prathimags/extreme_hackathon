@@ -1,0 +1,70 @@
+{% extends 'head.html' %}
+{% set active_page = "regform" %}
+{% block content %}
+
+
+   <form class="form-horizontal" action="{{ url_for('regform')}}" method="post"> 
+	<div class="form-group intro-center text-center bg-faded p-5 rounded">		
+      <br>
+      <h1 class="h3 mb-3 font-weight-normal">Group Registration Form</h1>
+	  <div class="col-sm-10">
+      
+<!--       <label class="col-sm-2 control-label font-weight-bold" style="vertical-align:top">Username:</label>	  
+		  <input name="username" id="username" size="50" required>
+		  <br><br>
+
+		  <label class="col-sm-2 control-label font-weight-bold" style="vertical-align:top"> Password:</label>
+		  <input type="password" name="password" id="password" size="50" required> -->
+      <!-- <i class="bi bi-eye-slash" id="togglePassword"></i> -->
+<!--       <br><br> -->
+
+<!--       <label class="col-sm-2 control-label font-weight-bold" style="vertical-align:top"> Email:</label>
+		  <input type="email" name="email" id="email" size="50" required> -->
+      <!-- <small id="emailHelp" class="form-text text-muted">primary email id which will be used for all communication.</small> -->
+
+      <!-- <i class="bi bi-eye-slash" id="togglePassword"></i> -->
+<!--       <br> -->
+      <br>
+
+		  <label class="col-sm-2 control-label font-weight-bold" style="vertical-align:top"> Group Name:</label>
+		  <input  name="group-name" id="group-name" size="50" required>
+      <br><br>
+      
+      <label class="col-sm-2 control-label font-weight-bold" style="vertical-align:top"> Group Members:</label>
+      <textarea type="text" class="col-sm-4" name="group-members" rows="4" required></textarea>
+
+		  <br><br>
+		  <!-- <button class="btn btn-lg btn-primary" type="submit">Start Automation Test</button> -->
+		  
+		  <!-- Button trigger modal -->
+		<button type="submit" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#exampleModal">
+		  Submit
+		</button>
+
+		<!-- Modal -->
+<!-- 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Submission Successful!!</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				The details have been successfully submitted!! <br> You will receive an confirmation in an email, after the review!! 
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Add Another</button>
+			  </div>
+			</div>
+		  </div>
+    </div> -->
+
+	  </div>
+    </div>  
+   </form>
+
+ 
+{% endblock %}

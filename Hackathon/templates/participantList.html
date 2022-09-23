@@ -1,0 +1,31 @@
+{% extends 'head.html' %}
+{% set active_page = "registrationlist" %}
+{% block content %}
+
+  <form class="form-horizontal"> 
+	<div class="form-group intro-center text-center bg-faded p-5 rounded">		
+      <h1 class="h3 mb-3 font-weight-normal text-success">Current Participants List:</h1>
+      <p style="color:brown">You can register yourself <a href="{{ url_for('regform') }}">here..</a></p>      
+      <table class="table table-bordered table-striped table-active">
+        <thead class="thead-dark">
+            <tr>
+                <th>Group Name</th>
+                <th>Group Members</th>
+                <th>Badge</th>
+            <tr>
+        </thead>
+        <tbody>
+            {% for group in groups %}
+            <tr>
+                <td>{{ group.name }}</td>
+                <td>{{ group.member }}</td>
+                <td>{{ group.badge }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+      <br><br>
+    </div>  
+   </form>
+
+{% endblock %}

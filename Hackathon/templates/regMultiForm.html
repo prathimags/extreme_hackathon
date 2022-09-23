@@ -1,0 +1,44 @@
+
+
+{% extends 'head-multiselect.html' %}
+{% set active_page = "regform" %}
+{% block content %}
+
+
+   <form class="form-horizontal" action="{{ url_for('regform')}}" method="post"> 
+	<div class="form-group intro-center text-center bg-faded p-5 rounded">		
+     
+      <h1 class="h3 mb-3 font-weight-normal">Group Registration Form</h1>
+	  <div class="col-sm-10">
+      <br>
+
+		  <label class="col-sm-2 control-label font-weight-bold" style="vertical-align:top"> Group Name:</label>
+		  <input name="group-name" id="group-name" size="55" required>
+      <br><br>
+      
+	  	<div class="row justify-content-center">
+			<div class="col-sm-4 col-lg-5 d-flex justify-content-center align-items-center">
+				<div class="d-flex font-weight-bold text-left align-items-center w-100">
+					<strong class="sl">Group Members:</strong>
+					<select class="dropdown-menu scrollable-menu" id="multiple-checkboxes" name="group-members" data-live-search="true" multiple="multiple" required>
+						{% for member in members %}
+							<option>{{ member }}</option> 
+						{% endfor %}
+					</select>
+				</div>
+			</div>
+	  	</div>
+	   
+
+		  <br><br>
+		  
+		  <!-- Button trigger modal -->
+		<button type="submit" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#exampleModal">
+		  Submit
+		</button>
+
+	  </div>
+    </div>  
+   </form>
+
+{% endblock %}

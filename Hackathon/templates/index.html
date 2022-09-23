@@ -1,0 +1,46 @@
+{% extends 'head.html' %}
+{% set active_page = "home" %}
+{% block content %}
+
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" style="width: 720px; height: 600px;" src="static/img/hackNet.jpeg" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Extreme HackNet</span>
+            <span class="section-heading-lower">Decode The Network!</span>
+          </h2>
+          <p class="mb-3">GEAR UP AT YOUR OWN PACE OVER A 5-WEEK IDEATION JOURNEY! SKILL UP, JOIN THE HACKATHON AND WIN EXCITING PRIZES!! <br><br>Form a team and participate in the coding challenges every week to earn points. You will be using the code you developed during weekly challenges and design the final project on the hackathon day!!
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-font-size-lg btn-xl" href="{{ url_for('regform') }}">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+  <section class="page-section about-heading">
+    <div class="container">      
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading text-center mb-4">
+                <span class="section-heading-upper">HACKATHON 2022</span>
+                <span class="section-heading-lower">Extreme HackNET</span>
+                <span class="section-heading-lower"></span>31 October 2022</span>
+              </h2>
+              <p>The HackNet is an open invitation to QA Engineers to participate in the Hackathon with 1-4 members size. Participants can form a group among themselves. Also team formation will be done for those who want to participate as a team. Participants will earn the points based on weekly participation and the final hackathon project implementation!!</p>        
+              <p><br>For any suggestions/queries, please email <b> hackathon@extremenetworks.com </b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'head.html' %}
+
+{% block content %}
+
+    <form class="form-horizontal" action="{{ url_for('regform')}}" method="post"> 
+        <div class="form-group intro-center text-center bg-faded p-5 rounded">		
+          <h1 class="h3 mb-3 font-weight-normal text-danger">This page is still under development .....</h1>
+          <br><br>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+              Weekly Challenges
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Week 1 Challenge</a>
+            <a href="#" class="list-group-item list-group-item-action">Week 2 Challenge</a>
+            <a href="#" class="list-group-item list-group-item-action">Week 3 Challenge</a>
+            <a href="#" class="list-group-item list-group-item-action disabled">Week 4 Challenge</a>
+          </div>
+          <!-- img src="static/img/workinprogress.png" class="rotate" width="300" height="300" />  -->    
+          <br><br>
+        </div>  
+    </form>
+    
+{% endblock %}
